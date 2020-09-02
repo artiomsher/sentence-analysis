@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Forbis task</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<h1>Previous requests</h1>
+        <p th:object="${history}" style="white-space: pre;" th:text="${history.readFromHistoryFile()}" />
+</body>
+</html>

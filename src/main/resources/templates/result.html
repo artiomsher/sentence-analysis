@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Forbis task</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<h1>Result</h1>
+	<a href="/">Submit another message</a>
+    <p th:text="'Text field content: ' + ${form.contentTextInput}" />
+    <p style="white-space: pre;" th:text="${form.getResultsTextInput()}" />
+    <p th:text="'File content: ' + ${form.contentFileInput}" />
+    <p style="white-space: pre;" th:text="${form.getResultsFileInput()}" />
+</body>
+</html>
